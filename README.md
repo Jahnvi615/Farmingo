@@ -16,5 +16,5 @@ Welcome to the Smallholder Farmer Platform! This project aims to empower smallho
 - JavaScript
 - Bootstrap (for responsive design)
 
-## Project Structure
+
 
