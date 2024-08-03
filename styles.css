@@ -1,0 +1,219 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(228, 241, 223);
+    overflow-x: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: url('assets/welcome-background.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcome-content {
+    max-width: 80%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-content h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-content p {
+    font-size: 1.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-image {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.welcome-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.welcome-content button:hover {
+    background-color: #45a049;
+    animation: buttonHover 0.6s ease-in-out infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+.dashboard-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    background-color: #556B2F;
+    color: black;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dashboard-item {
+    background-color: #fff;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    color: black;
+}
+
+.dashboard-item:hover {
+    transform: scale(1.05);
+    background-color: #a4d04d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #556B2F;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #556B2F;
+}
+
+footer {
+    background: #556B2F;;
+    color: white;
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 3px solid #556B2F;;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 0.25rem 0;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #556B2F;;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.footer-section a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.5rem 0.25rem;
+    }
+}

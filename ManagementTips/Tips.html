@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Management Tips</title>
+    <link rel="stylesheet" href="Tips.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 3em; color: #a9cd46; font-family: 'Comic Sans MS', cursive, sans-serif; text-align:left; margin: 0px 0; text-shadow: 3px 3px #c78329; transform: rotate(-2deg); animation: fadeIn 2s ease-in-out;">Farmingo!</h1>
+        <h1>Crop Management Tips</h1>
+    </header>
+    <main>
+        <section id="tips">
+            <h2>General Tips</h2>
+            <ul>
+                <li>Ensure proper soil preparation before planting.</li>
+                <li>Use high-quality seeds suitable for your region.</li>
+                <li>Implement regular watering and fertilization schedules.</li>
+            </ul>
+            <h2>Seasonal Tips</h2>
+            <ul>
+                <li>Spring: Prepare your soil for planting by adding organic matter.</li>
+                <li>Summer: Monitor for pests and diseases and apply treatments as needed.</li>
+                <li>Fall: Harvest crops at their peak maturity for best results.</li>
+            </ul>
+        </section>
+        <section id="chart">
+            <h2>Crop Distribution</h2>
+            <svg width="300" height="300" viewBox="0 0 300 300">
+                <!-- Background circle -->
+                <circle cx="150" cy="150" r="100" fill="#f0f0f0" />
+                <!-- Pie slices -->
+                <path d="M150,150 L150,50 A100,100 0 0,1 200,150 Z" fill="#ff9999" />
+                <path d="M150,150 L200,150 A100,100 0 0,1 175,225 Z" fill="#66b3ff" />
+                <path d="M150,150 L175,225 A100,100 0 0,1 100,150 Z" fill="#99ff99" />
+                <path d="M150,150 L100,150 A100,100 0 0,1 150,50 Z" fill="#ffcc99" />
+                <!-- Labels -->
+                <text x="150" y="80" text-anchor="middle" fill="#000" font-size="14">Wheat</text>
+                <text x="200" y="180" text-anchor="middle" fill="#000" font-size="14">Corn</text>
+                <text x="125" y="220" text-anchor="middle" fill="#000" font-size="14">Rice</text>
+                <text x="100" y="150" text-anchor="middle" fill="#000" font-size="14">Soybeans</text>
+            </svg>
+        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agriculture Tips. All rights reserved.</p>
+    </footer>
+</body>
+</html>
